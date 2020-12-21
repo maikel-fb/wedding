@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Panel1 from './panel1';
+import Panel2 from './panel2';
+import Panel3 from './panel3';
+import Panel4 from './panel4';
+import Form from './form';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='page-wrapper'>
+      <div id='wrapper'>
+        <Panel1 />
+        <Panel2 />
+        <Panel3 />
+        <Panel4 />
+        <Form />
+      </div>
     </div>
   );
 }
