@@ -10,7 +10,9 @@ const form = () => {
 			</div>
 			<div class='inner columns divided'>
 				<div class='span-3-25'>
-					<form name='contact' method='POST' data-netlify='true'>
+					<form name='contact' method='post'>
+						<input type='hidden' name='form-name' value='contact' />
+
 						<div class='fields'>
 							<div class='field half'>
 								<label for='name'>Naam</label>
@@ -27,7 +29,7 @@ const form = () => {
 									name='Burgerlijke stand'
 									class='color2'
 								/>
-								<label for='reception'>Receptie</label>
+								<label for='reception'>Burgerlijke stand</label>
 							</div>
 							<div class='field third'>
 								<input
