@@ -1,4 +1,5 @@
 import React from 'react';
+import map from './images/map.png';
 
 const form = () => {
 	return (
@@ -9,7 +10,7 @@ const form = () => {
 			</div>
 			<div class='inner columns divided'>
 				<div class='span-3-25'>
-					<form method='post' action='#'>
+					<form name='contact' method='POST' data-netlify='true'>
 						<div class='fields'>
 							<div class='field half'>
 								<label for='name'>Naam</label>
@@ -19,33 +20,32 @@ const form = () => {
 								<label for='email'>Email</label>
 								<input type='email' name='email' id='email' />
 							</div>
-							<div class='field quarter'>
+							<div class='field third'>
 								<input
 									type='checkbox'
-									id='demo-copy'
-									name='demo-copy'
+									id='reception'
+									name='Burgerlijke stand'
 									class='color2'
 								/>
-								<label for='demo-copy'>Receptie</label>
+								<label for='reception'>Receptie</label>
 							</div>
-							<div class='field quarter'>
+							<div class='field third'>
 								<input
 									type='checkbox'
-									id='demo-copy'
-									name='demo-copy'
+									id='kerkdienst'
+									name='Kerkdienst'
 									class='color2'
 								/>
-								<label for='demo-copy'>Kerkdienst</label>
+								<label for='kerkdienst'>Kerkdienst</label>
 							</div>
-							<div class='field quarter'>
+							<div class='field third'>
 								<input
 									type='checkbox'
-									id='demo-human'
-									name='demo-human'
+									id='borrel'
+									name='Borrel'
 									class='color2'
-									checked
 								/>
-								<label for='demo-human'>Feest</label>
+								<label for='borrel'>Borrel</label>
 							</div>
 							<div class='field third'>
 								<label for='demo-category'>Mijn huishouden bestaat uit:</label>
@@ -53,9 +53,9 @@ const form = () => {
 									<select name='demo-category' id='demo-category'>
 										<option value=''>-</option>
 										<option value='1'>1 persoon</option>
-										<option value='1'>2 personen</option>
-										<option value='1'>3 personen</option>
-										<option value='1'>4 personen</option>
+										<option value='2'>2 personen</option>
+										<option value='3'>3 personen</option>
+										<option value='4'>4 personen</option>
 									</select>
 								</div>
 							</div>
@@ -76,21 +76,8 @@ const form = () => {
 						</ul>
 					</form>
 				</div>
-				<div class='span-1-5'>
-					<ul class='contact-icons color1'>
-						<li class='icon brands fa-twitter'>
-							<p>Dirk-Jan Pennings</p>
-						</li>
-						<li class='icon brands fa-facebook-f'>
-							<p>+31 6 11 97 75 23</p>
-						</li>
-						<li class='icon brands fa-snapchat-ghost'>
-							<p>Nienke Hendriksen</p>
-						</li>
-						<li class='icon brands fa-phone'>
-							<p>+31 6 11 97 75 23</p>
-						</li>
-					</ul>
+				<div class='span-1-6'>
+					<img src={map} width='500' height='auto' alt='' />
 				</div>
 			</div>
 		</section>
