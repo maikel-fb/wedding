@@ -22,16 +22,16 @@ const form = () => {
 								<label for='email'>Email</label>
 								<input type='email' name='email' id='email' />
 							</div>
-							<div class='field third'>
+							<div class='field quarter'>
 								<input
 									type='checkbox'
-									id='reception'
-									name='Burgerlijke stand'
+									id='jawoord'
+									name='Ja- woord'
 									class='color2'
 								/>
-								<label for='reception'>Burgerlijke stand</label>
+								<label for='jawoord'>Ja- woord</label>
 							</div>
-							<div class='field third'>
+							<div class='field quarter'>
 								<input
 									type='checkbox'
 									id='kerkdienst'
@@ -40,7 +40,11 @@ const form = () => {
 								/>
 								<label for='kerkdienst'>Kerkdienst</label>
 							</div>
-							<div class='field third'>
+							<div class='field quarter'>
+								<input type='checkbox' id='diner' name='Diner' class='color2' />
+								<label for='diner'>Diner</label>
+							</div>
+							<div class='field quarter'>
 								<input
 									type='checkbox'
 									id='borrel'
@@ -49,6 +53,7 @@ const form = () => {
 								/>
 								<label for='borrel'>Borrel</label>
 							</div>
+
 							<div class='field third'>
 								<label for='demo-category'>Mijn huishouden bestaat uit:</label>
 								<div class='select-wrapper'>
@@ -58,6 +63,7 @@ const form = () => {
 										<option value='2'>2 personen</option>
 										<option value='3'>3 personen</option>
 										<option value='4'>4 personen</option>
+										<option value='5'>5 personen</option>
 									</select>
 								</div>
 							</div>
