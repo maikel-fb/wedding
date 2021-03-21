@@ -36,7 +36,7 @@ const Panel = () => {
 					</h1>
 					<h2 style={h2}>16:00 uur</h2>
 					<p style={p}>
-						Leuk dat je op afstand onze trouwdienst wil meebeleven. Via deze
+						Leuk dat je op afstand onze trouwdienst wilt meebeleven. Via deze
 						site kun je de livestream kijken.
 						<br />
 						<br />
